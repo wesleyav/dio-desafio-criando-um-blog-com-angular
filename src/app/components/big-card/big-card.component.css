@@ -19,11 +19,10 @@
 }
 
 .big-card__description p a {
-
   color: gray;
 }
 
 .big-card__photo img {
   width: 100%;
-  min-width: 600px;
+  min-width: 400px;
 }
