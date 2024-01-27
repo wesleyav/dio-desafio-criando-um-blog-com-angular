@@ -1,15 +1,16 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="https://windowsclub.com.br/wp-content/uploads/2022/09/homem-ferro.jpg" />
+    <img src="{{ photoCover }}" />
   </div>
   <div class="big-card__title">
-    <h1><a href="#">Title</a></h1>
+    <h1>
+      <a href="#">{{ cardTitle }}</a>
+    </h1>
   </div>
   <div class="big-card__description">
     <p>
       <a href="#">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac orci elit. Aenean nec dolor a lectus gravida
-        efficitur sit amet ac ipsum. Ut tincidunt sagittis quam pulvinar eleifend.
+        {{ cardDescription }}
       </a>
     </p>
   </div>
