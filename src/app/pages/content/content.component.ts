@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-content',
@@ -10,9 +11,9 @@ export class ContentComponent implements OnInit {
   contentTitle: string = 'MINHA NOTÍCIA';
   contentDescription: string = 'Olá Mundo!';
 
-  constructor() {}
+  constructor(private route: ActivatedRoute) {}
 
-  ngOnInit() {
-    console.log('OnInit');
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(value => console.log(value.get('id')));
   }
 }
